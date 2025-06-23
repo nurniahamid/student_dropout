@@ -52,7 +52,7 @@ input_dict = {
     'Curricular_units_2nd_sem_grade': curricular_grade_2nd
 }
 
-input_df = pd.DataFrame([input_dict])
+input_df = pd.DataFrame([input_dict], columns=X_train.columns)
 
 # Scaling
 scaled_input = scaler.transform(input_df)
