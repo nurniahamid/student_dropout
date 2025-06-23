@@ -4,7 +4,8 @@ import numpy as np
 import joblib
 
 # Load model dan scaler
-model = joblib.load('model_rf_best.joblib')
+model = joblib.load("model_rf_best.joblib")
+scaler = joblib.load("scaler.joblib")
 feature_columns = joblib.load("feature_columns.joblib")
 
 st.title("🎓 Dropout Prediction App")
